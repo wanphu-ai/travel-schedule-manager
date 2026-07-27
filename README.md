@@ -9,7 +9,7 @@
 
 Ứng dụng web giúp bạn lên lịch trình, quản lý sự kiện và theo dõi các hoạt động trong chuyến du lịch một cách trực quan, khoa học. Được thiết kế với giao diện **Glassmorphism hiện đại** và bảng màu **Tương đồng (Analogous Palette: Teal, Cyan, Sky, Emerald)** mang lại cảm giác dễ chịu, thanh lịch và hiển thị chữ rõ nét tương thích 100% trên mọi trình duyệt.
 
-🔗 **Link Demo Trực Tuyến**: [https://travel-schedule-manager-f8i86ymjc-wanphu-ais-projects.vercel.app/](https://travel-schedule-manager-f8i86ymjc-wanphu-ais-projects.vercel.app/)
+🔗 **Link Demo Trực Tuyến**: [https://travel-schedule-manager.vercel.app/](https://travel-schedule-manager.vercel.app/)
 
 ---
 
