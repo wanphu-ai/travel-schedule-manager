@@ -7,16 +7,16 @@
 ![Vitest](https://img.shields.io/badge/Vitest-2.0-6E9F18?logo=vitest)
 ![Vercel](https://img.shields.io/badge/Vercel-Deployed-000000?logo=vercel)
 
-Ứng dụng web giúp bạn lên lịch trình, quản lý sự kiện và theo dõi các hoạt động trong chuyến du lịch một cách trực quan, khoa học. Được thiết kế với giao diện **Glassmorphism hiện đại** và bảng màu **Tương đồng (Analogous Palette: Teal, Cyan, Sky, Emerald)** mang lại cảm giác dễ chịu, thanh lịch.
+Ứng dụng web giúp bạn lên lịch trình, quản lý sự kiện và theo dõi các hoạt động trong chuyến du lịch một cách trực quan, khoa học. Được thiết kế với giao diện **Glassmorphism hiện đại** và bảng màu **Tương đồng (Analogous Palette: Teal, Cyan, Sky, Emerald)** mang lại cảm giác dễ chịu, thanh lịch và hiển thị chữ rõ nét tương thích 100% trên mọi trình duyệt.
 
 🔗 **Link Demo Trực Tuyến**: [https://travel-schedule-manager-f8i86ymjc-wanphu-ais-projects.vercel.app/](https://travel-schedule-manager-f8i86ymjc-wanphu-ais-projects.vercel.app/)
 
 ---
 
 ## 🎨 Phối Màu Tương Đồng (Analogous Color Scheme)
-*   **Teal (`#0d9488`)**: Màu chính cho các nút bấm primary, Logo, icon chủ đạo.
-*   **Cyan (`#0891b2`)**: Điểm nhấn phụ và hiệu ứng hover/focus lung linh.
-*   **Sky (`#0284c7`)**: Gam màu chuyển tiếp cho viền kính thủy tinh và gradient.
+*   **Teal (`#0d9488`)**: Màu chính sắc nét cho tiêu đề, các nút bấm primary, Logo và icon chủ đạo.
+*   **Cyan (`#0891b2`)**: Điểm nhấn phụ và màu chữ phản quang nổi bật khi tương tác ở Dark mode.
+*   **Sky (`#0284c7`)**: Gam màu chuyển tiếp cho viền kính thủy tinh (Glassmorphism borders) và background gradients.
 *   **Emerald (`#059669`)**: Màu hiển thị cho các sự kiện hoàn thành, badge trạng thái thành công.
 
 ---
@@ -34,6 +34,7 @@
 5. **Bộ Lọc Tiện Lợi (Filtering)**: Lọc nhanh các sự kiện theo thể loại hoạt động.
 6. **Quản Lý Profile**: Trang cập nhật thông tin cá nhân (Họ tên, Số điện thoại, Địa chỉ).
 7. **Theme Toggle**: Chuyển đổi linh hoạt giữa giao diện Tối (Dark mode) và Sáng (Light mode) lưu trên LocalStorage.
+8. **Tối Ưu Hiển Thị Tiêu Đề (Cross-Browser Typography Fix)**: Sửa toàn bộ hiệu ứng phủ màu nền làm mờ tiêu đề thành màu chữ đơn sắc rõ nét trên mọi thiết bị và trình duyệt.
 
 ---
 
@@ -69,12 +70,12 @@ travel-schedule-manager/
 │   ├── assets/              # Tài nguyên hình ảnh, SVG
 │   ├── components/          # UI Components
 │   │   ├── common/          # Button, InputField với password toggle
-│   │   ├── forms/           # EventModalForm (Thêm/sửa sự kiện)
-│   │   └── layout/          # Navbar (Logo, Dark/Light Mode, Profile Badge)
+│   │   ├── forms/           # EventModalForm (Đã tối ưu tiêu đề chữ)
+│   │   └── layout/          # Navbar (Đã tối ưu logo TripPlanner)
 │   ├── contexts/            # AuthContext, ThemeContext
 │   ├── firebase/            # firebaseConfig.js
 │   ├── hooks/               # useAuth, useScheduleEngine (Realtime Clock)
-│   ├── pages/               # Login, Register, Profile, Schedule
+│   ├── pages/               # Login, Register, Profile, Schedule (Đã sửa lỗi tiêu đề)
 │   ├── routes/              # ProtectedRoute, PublicRoute
 │   ├── services/            # authService, userService, eventService (Firestore & LocalStorage)
 │   ├── utils/               # firebaseErrorMessages.js
