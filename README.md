@@ -9,7 +9,7 @@
 
 Ứng dụng web giúp bạn lên lịch trình, quản lý sự kiện và theo dõi các hoạt động trong chuyến du lịch một cách trực quan, khoa học. Được thiết kế với giao diện **Glassmorphism hiện đại** và bảng màu **Tương đồng (Analogous Palette: Teal, Cyan, Sky, Emerald)** mang lại cảm giác dễ chịu, thanh lịch và hiển thị chữ rõ nét tương thích 100% trên mọi trình duyệt.
 
-🔗 **Link Demo Trực Tuyến**: [https://travel-schedule-manager.vercel.app/](https://travel-schedule-manager.vercel.app/)
+🔗 **Link Demo Trực Tuyến**: [https://travel-schedule-manager-l2ajpnij1-wanphu-ais-projects.vercel.app/](https://travel-schedule-manager-l2ajpnij1-wanphu-ais-projects.vercel.app/)
 
 ---
 
@@ -49,23 +49,27 @@
 
 ![Register Page](./public/screenshots/register_page.png)
 
-### 3. Trang Lịch Trình Rỗng (Empty Dashboard)
+### 3. Giao Diện Tối với Sự Kiện (Dark Mode Dashboard)
 
-![Dashboard Empty](./public/screenshots/dashboard_empty.png)
+![Dashboard Events](./public/screenshots/dashboard_events.png)
 
 ### 4. Giao Diện Sáng (Light Mode Dashboard)
 
 ![Dashboard Light Mode](./public/screenshots/dashboard_light_mode.png)
 
-### 5. Quản Lý Sự Kiện Thực Tế (Dashboard with Events)
+### 5. Form Thêm Sự Kiện (Event Modal)
 
-![Dashboard Events](./public/screenshots/dashboard_events.png)
+![Add Event Modal](./public/screenshots/modal_add_event.png)
 
-### 6. Trang Thông Tin Cá Nhân (Profile Page)
+### 6. Quản Lý Nhiều Sự Kiện (Multiple Events)
+
+![Dashboard Two Events](./public/screenshots/dashboard_two_events.png)
+
+### 7. Trang Thông Tin Cá Nhân (Profile Page)
 
 ![Profile Page](./public/screenshots/profile_page.png)
 
----
+
 
 ## 📂 Cấu Trúc Thư Mục Dự Án
 
@@ -223,4 +227,4 @@ Sau đó bấm **Deploy**.
 
 1. Sau khi Deploy thành công, vào dự án trên Vercel $\rightarrow$ chọn **Settings** $\rightarrow$ **Deployment Protection**.
 2. Tìm mục **Vercel Authentication** $\rightarrow$ Chuyển công tắc về **Disabled** (Tắt) $\rightarrow$ Bấm **Save**.
-3. Sao chép link Vercel công khai (ví dụ: `https://travel-schedule-manager.vercel.app/`) và gắn vào phần **About** trên GitHub Repository của bạn.
+3. Sao chép link Vercel công khai (ví dụ: `https://travel-schedule-manager-l2ajpnij1-wanphu-ais-projects.vercel.app/`) và gắn vào phần **About** trên GitHub Repository của bạn.
