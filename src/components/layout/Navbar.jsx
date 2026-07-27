@@ -35,7 +35,7 @@ export const Navbar = () => {
               <Compass className="w-6 h-6 animate-pulse" />
             </div>
             <div className="flex flex-col">
-              <span className="font-bold text-lg leading-tight bg-analogous-gradient bg-clip-text text-transparent">
+              <span className="font-bold text-lg leading-tight text-teal-600 dark:text-cyan-400">
                 TripPlanner
               </span>
               <span className="text-[10px] text-slate-500 dark:text-slate-400 tracking-wider">SCHEDULE MANAGER</span>

@@ -46,7 +46,7 @@ export const RegisterPage = () => {
           <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-analogous-gradient text-white shadow-xl shadow-teal-500/30 mb-4">
             <UserPlus className="w-8 h-8" />
           </div>
-          <h1 className="text-2xl font-bold bg-analogous-gradient bg-clip-text text-transparent">
+          <h1 className="text-2xl font-bold text-teal-600 dark:text-cyan-400">
             Tạo Tài Khoản Mới
           </h1>
           <p className="text-sm text-slate-500 dark:text-slate-400 mt-1">

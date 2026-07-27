@@ -166,7 +166,7 @@ export const SchedulePage = () => {
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-teal-500/10 text-teal-600 dark:text-cyan-400 border border-teal-500/20 mb-3">
               <Zap className="w-3.5 h-3.5" /> Realtime Engine Clock: {currentTimeString}
             </div>
-            <h1 className="text-3xl font-extrabold bg-analogous-gradient bg-clip-text text-transparent">
+            <h1 className="text-3xl font-extrabold text-teal-600 dark:text-cyan-400">
               Quản Lý Lịch Trình Chuyến Đi
             </h1>
             <p className="text-sm text-slate-600 dark:text-slate-400 mt-1">

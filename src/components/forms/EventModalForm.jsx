@@ -41,7 +41,7 @@ export const EventModalForm = ({ isOpen, onClose, onSubmit, initialData = null }
         <div className="flex items-center justify-between pb-4 border-b border-slate-200 dark:border-slate-800 mb-6">
           <div className="flex items-center gap-2">
             <Calendar className="w-6 h-6 text-teal-500 dark:text-cyan-400" />
-            <h2 className="text-xl font-bold bg-analogous-gradient bg-clip-text text-transparent">
+            <h2 className="text-xl font-bold text-teal-600 dark:text-cyan-400">
               {initialData ? 'Chỉnh Sửa Sự Kiện' : 'Thêm Sự Kiện Mới'}
             </h2>
           </div>
