@@ -14,10 +14,11 @@
 ---
 
 ## 🎨 Phối Màu Tương Đồng (Analogous Color Scheme)
-*   **Teal (`#0d9488`)**: Màu chính sắc nét cho tiêu đề, các nút bấm primary, Logo và icon chủ đạo.
-*   **Cyan (`#0891b2`)**: Điểm nhấn phụ và màu chữ phản quang nổi bật khi tương tác ở Dark mode.
-*   **Sky (`#0284c7`)**: Gam màu chuyển tiếp cho viền kính thủy tinh (Glassmorphism borders) và background gradients.
-*   **Emerald (`#059669`)**: Màu hiển thị cho các sự kiện hoàn thành, badge trạng thái thành công.
+
+* **Teal (`#0d9488`)**: Màu chính sắc nét cho tiêu đề, các nút bấm primary, Logo và icon chủ đạo.
+* **Cyan (`#0891b2`)**: Điểm nhấn phụ và màu chữ phản quang nổi bật khi tương tác ở Dark mode.
+* **Sky (`#0284c7`)**: Gam màu chuyển tiếp cho viền kính thủy tinh (Glassmorphism borders) và background gradients.
+* **Emerald (`#059669`)**: Màu hiển thị cho các sự kiện hoàn thành, badge trạng thái thành công.
 
 ---
 
@@ -41,21 +42,27 @@
 ## 📸 Ảnh Giao Diện Minh Họa
 
 ### 1. Trang Đăng Nhập (Login Page)
+
 ![Landing Login Page](./public/screenshots/landing_login_page.png)
 
 ### 2. Trang Đăng Ký (Register Page)
+
 ![Register Page](./public/screenshots/register_page.png)
 
 ### 3. Trang Lịch Trình Rỗng (Empty Dashboard)
+
 ![Dashboard Empty](./public/screenshots/dashboard_empty.png)
 
 ### 4. Giao Diện Sáng (Light Mode Dashboard)
+
 ![Dashboard Light Mode](./public/screenshots/dashboard_light_mode.png)
 
 ### 5. Quản Lý Sự Kiện Thực Tế (Dashboard with Events)
+
 ![Dashboard Events](./public/screenshots/dashboard_events.png)
 
 ### 6. Trang Thông Tin Cá Nhân (Profile Page)
+
 ![Profile Page](./public/screenshots/profile_page.png)
 
 ---
@@ -100,6 +107,7 @@ travel-schedule-manager/
 ## 🚀 Hướng Dẫn Chạy Dự Án Dưới Local
 
 ### 1. Tải Mã Nguồn & Cài Đặt Thư Viện
+
 ```bash
 git clone https://github.com/<TEN_GITHUB_CUA_BAN>/travel-schedule-manager.git
 cd travel-schedule-manager
@@ -107,7 +115,9 @@ npm install
 ```
 
 ### 2. Thiết Lập Biến Môi Trường (Environment Variables)
+
 Tạo file `.env` ở thư mục gốc và điền các khóa Firebase của bạn:
+
 ```env
 VITE_FIREBASE_API_KEY=your_api_key
 VITE_FIREBASE_AUTH_DOMAIN=your_auth_domain
@@ -118,24 +128,31 @@ VITE_FIREBASE_APP_ID=your_app_id
 ```
 
 ### 3. Chạy Chế Độ Phát Triển (Development)
+
 ```bash
 npm run dev
 ```
+
 👉 Ứng dụng sẽ chạy tại địa chỉ: `http://localhost:5173`
 
 ### 4. Kiểm Thử Hệ Thống (Testing)
-Dự án được tích hợp sẵn 8 bài **Automated Unit Tests** (sử dụng Vitest) cùng kịch bản **Manual Testing** chi tiết. 
+
+Dự án được tích hợp sẵn 8 bài **Automated Unit Tests** (sử dụng Vitest) cùng kịch bản **Manual Testing** chi tiết.
 
 Chạy lệnh kiểm thử tự động:
+
 ```bash
 npm test
 ```
+
 👉 **Xem chi tiết toàn bộ kịch bản và danh sách các bài test tại**: [📖 Tài liệu Kiểm Thử Chi Tiết (test/README.md)](./test/README.md)
 
 ### 5. Build Sản Phẩm
+
 ```bash
 npm run build
 ```
+
 Sản phẩm sau khi đóng gói sẽ nằm trong thư mục `dist`.
 
 ---
@@ -143,15 +160,18 @@ Sản phẩm sau khi đóng gói sẽ nằm trong thư mục `dist`.
 ## 🔥 Hướng Dẫn Chi Tiết Cấu Hình Firebase Console
 
 ### 1. Tạo Project & Bật Firebase Authentication
+
 1. Truy cập [Firebase Console](https://console.firebase.google.com/) và đăng nhập bằng tài khoản Google.
 2. Bấm **Add project** (Tạo dự án mới) $\rightarrow$ Đặt tên project (ví dụ: `travel-schedule-manager`) $\rightarrow$ Bấm **Continue** cho đến khi hoàn thành.
 3. Ở menu bên trái, chọn **Build** $\rightarrow$ **Authentication**.
 4. Bấm **Get Started** $\rightarrow$ Tại tab **Sign-in method**, chọn **Email/Password** $\rightarrow$ Bật công tắc **Enable** $\rightarrow$ Bấm **Save**.
 
 ### 2. Khởi Tạo Cloud Firestore Database & Security Rules
+
 1. Ở menu bên trái, chọn **Build** $\rightarrow$ **Firestore Database** $\rightarrow$ Bấm **Create database**.
 2. Chọn vị trí máy chủ (ví dụ: `asia-southeast1`) $\rightarrow$ Chọn **Start in test mode** $\rightarrow$ Bấm **Create**.
 3. Chuyển sang tab **Rules**, dán đoạn quy tắc bảo mật sau và bấm **Publish**:
+
 ```javascript
 rules_version = '2';
 service cloud.firestore {
@@ -167,6 +187,7 @@ service cloud.firestore {
 ```
 
 ### 3. Lấy API Keys Cấu Hình File `.env`
+
 1. Tại trang chủ Firebase Console, bấm vào icon bánh răng ⚙️ (**Project settings**).
 2. Cuộn xuống mục **Your apps**, chọn icon Web `</>` để tạo App Web.
 3. Sao chép các thông số trong `firebaseConfig` điền vào file `.env` ở dự án của bạn.
@@ -176,15 +197,19 @@ service cloud.firestore {
 ## 🚀 Hướng Dẫn Deploy Lên Vercel Trực Tuyến
 
 ### 1. Push Mã Nguồn Lên GitHub
+
 Đảm bảo bạn đã lưu code và push repository lên GitHub (chế độ **Public**).
 
 ### 2. Import Repository Lên Vercel
+
 1. Truy cập [Vercel Dashboard](https://vercel.com/dashboard) và đăng nhập bằng tài khoản GitHub.
 2. Bấm **Add New...** $\rightarrow$ **Project**.
 3. Chọn Repository `travel-schedule-manager` và bấm **Import**.
 
 ### 3. Nhập Biến Môi Trường (Environment Variables) Trên Vercel
+
 Tại màn hình Cấu hình Deploy của Vercel, mở mục **Environment Variables** và nhập 6 biến tương ứng:
+
 - `VITE_FIREBASE_API_KEY`
 - `VITE_FIREBASE_AUTH_DOMAIN`
 - `VITE_FIREBASE_PROJECT_ID`
@@ -195,6 +220,7 @@ Tại màn hình Cấu hình Deploy của Vercel, mở mục **Environment Varia
 Sau đó bấm **Deploy**.
 
 ### 4. Tắt Deployment Protection (Để Mở Public Link)
+
 1. Sau khi Deploy thành công, vào dự án trên Vercel $\rightarrow$ chọn **Settings** $\rightarrow$ **Deployment Protection**.
 2. Tìm mục **Vercel Authentication** $\rightarrow$ Chuyển công tắc về **Disabled** (Tắt) $\rightarrow$ Bấm **Save**.
-3. Sao chép link Vercel công khai (ví dụ: `https://travel-schedule-manager-f8i86ymjc-wanphu-ais-projects.vercel.app/`) và gắn vào phần **About** trên GitHub Repository của bạn.
+3. Sao chép link Vercel công khai (ví dụ: `https://travel-schedule-manager.vercel.app/`) và gắn vào phần **About** trên GitHub Repository của bạn.

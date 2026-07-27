@@ -88,8 +88,14 @@ export const SchedulePage = () => {
   // Xóa Event
   const handleDeleteEvent = async (eventId) => {
     if (window.confirm('Bạn có chắc chắn muốn xóa sự kiện này?')) {
-      await deleteEvent(currentUser.uid, eventId);
-      toast.success('Đã xóa sự kiện.');
+      // Optimistic update: xóa ngay lập tức khỏi state UI
+      setEvents(prev => prev.filter(e => e.id !== eventId));
+      const { success } = await deleteEvent(currentUser.uid, eventId);
+      if (success) {
+        toast.success('Đã xóa sự kiện.');
+      } else {
+        toast.error('Lỗi khi xóa sự kiện trên máy chủ!');
+      }
     }
   };
 
